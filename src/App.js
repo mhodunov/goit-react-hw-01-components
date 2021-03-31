@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Profile from './Profile/Profile.js';
 import userData from './Profile/user.json';
+import Statistics from './Statistics/Statistics.js'
+import statisticalData from './Statistics/statistical-data.json'
 
 function App() {
   return (
@@ -15,8 +17,12 @@ function App() {
       views={userData.stats.views}
       likes={userData.stats.likes}
     />
+    <Statistics
+      title='Upload Data'
+      stats={statisticalData}
+      />
     </div>
   );
-}
+};
 
 export default App;
