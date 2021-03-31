@@ -6,6 +6,8 @@ import Statistics from './Statistics/Statistics.js'
 import statisticalData from './Statistics/statistical-data.json'
 import FriendsList from './FriendsList/FriendsList';
 import friends from './FriendsListItem/friends.json';
+import transactions from './TransactionHistory/transactions.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory.js';
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
       />
      <FriendsList
      friends={friends}
+     />
+     <TransactionHistory
+     transactions={transactions}
      /> 
     </div>
   );
